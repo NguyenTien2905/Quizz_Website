@@ -1,0 +1,53 @@
+    <!-- Breadcrum -->
+    <div class="container-fluid bg-info mt-1 " style="height: 40px;">
+        <div class="container pt-1">
+            <ul class="breadcrumb">
+              <li class="breadcrumb-item"><a href="./index.html">Trang chủ</a></li>
+              <li class="breadcrumb-item"><a href="./login.html">Đăng nhập</a></li>
+              <li class="breadcrumb-item active">Mật khẩu mới</li>
+            </ul>
+        </div>
+      </div>
+      <!-- Forgot  -->
+      <section class="py-3 py-md-5 py-xl-8  ">
+        <div class="container border border-2 pb-5 pt-5 rounded-3 ">
+          <div class="row">
+            <div class="col-12">
+              <div class="mb-5">
+                <h2 class="display-5 fw-bold text-center">Tạo mật khẩu mới</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-10 col-xl-8">
+              <div class="row gy-5 justify-content-center">
+                <div class="col-12 col-lg-5">
+                  <!-- Form -->
+                  <form action="" >
+                    <div class="mb-3">
+                      <label for="password" class="form-label">Mật khẩu mới:</label>
+                      <div class="d-flex flex-row">
+                        <input type="password" class="form-control me-2 " id="password" name="password" required>
+                        <button type="button" id="toggleButton" onclick="togglePassword()" class="btn btn-info" style="width: 100px;">Hiện</button>
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="code" class="form-label">Nhập lại mật khẩu:</label>
+                      <div class="d-flex flex-row">
+                        <input type="password" class="form-control me-2 " id="repassword" name="repassword" required>
+                        <button type="button" id="toggleButtonRepass" onclick="toggleRepassword()" class="btn btn-info" style="width: 100px;">Hiện</button>
+                      </div>  
+                    </div>
+                    <div class="mb-3 text-center ">
+                      <!-- <input type="submit" class="btn btn-lg btn-dark rounded-0 fs-6" value="Lấy lại mật khẩu"> -->
+                      <button type="submit" class="btn btn-lg btn-dark rounded-0 fs-6 mt-4" onclick="notiSuccess()">
+                        <a href="" class="text-decoration-none text-white ">Xác nhận mật khẩu</a>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>

@@ -8,6 +8,14 @@ angular.module('myApp',['ngRoute']).config(function ($routeProvider) {
         templateUrl: 'views/contant.html'
     }).when('/Q&A', {
         templateUrl: 'views/Q&A.html'
+    }).when('/login', {
+        templateUrl: 'views/login.html'
+    }).when('/register', {
+        templateUrl: 'views/register.html'
+    }).when('/forgot', {
+        templateUrl: 'views/forgot.html',
+    }).when('/resetPass', {
+        templateUrl: 'views/resetPass.html',
     })
 })
 
