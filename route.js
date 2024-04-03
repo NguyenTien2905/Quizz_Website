@@ -16,6 +16,14 @@ angular.module('myApp',['ngRoute']).config(function ($routeProvider) {
         templateUrl: 'views/forgot.html',
     }).when('/resetPass', {
         templateUrl: 'views/resetPass.html',
+    }).when('/category', {
+        templateUrl: 'views/category.html',
+    }).when('/quizz', {
+        templateUrl: 'views/quizz.html',
+    }).when('/questions', {
+        templateUrl: 'views/questions.html',
+    }).when('/filter', {
+        templateUrl: 'views/filter.html',
     })
 })
 

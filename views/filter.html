@@ -1,0 +1,109 @@
+    <!-- Breadcrum -->
+    <div class="container-fluid bg-info mt-1 " style="height: 40px;">
+        <div class="container pt-1">
+            <ul class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#!/">Trang chủ</a></li>
+              <li class="breadcrumb-item"><a href="#!/category">Đề thi</a></li>
+              <li class="breadcrumb-item active">Bộ lọc</li>
+            </ul>
+        </div>
+      </div>
+  
+      <!-- Banner -->
+      <div class="container-fluid text-center bg-light mt-2 ">
+        <img src="./assets/image/sld1.jpg"  style="height: 300px;">
+      </div>
+  
+  
+      <!-- Filter -->
+      <section class="filter">
+        <section class="py-3 py-md-5 py-xl-8  ">
+          <div class="container border border-2 pb-4 pt-4 rounded-3 ">
+            <!-- Form -->
+            <form action="#!/category">
+              <div class="mx-5 ">
+                <div class="title">
+                    <div class="mx">
+                      <h2 class="fs-3 fw-bold">Bộ lộc theo tiêu chí</h2>
+                  </div>
+                </div>
+  
+                <!-- Subject -->
+                <div class="row">
+                  <div>
+                    <p>B1: Chọn môn học</p>
+                  </div>
+                  <div class="col-12 col-lg-10 col-xl-8">
+                    <select class="form-select form-select-lg">
+                      <option>Lập trình PHP</option>
+                      <option>SQL Server</option>
+                      <option>Kiểm thử và Triển khai</option>
+                      <option>Lập trình PHP</option>
+                      <option>SQL Server</option>
+                      <option>Kiểm thử và Triển khai</option>
+                    </select>
+                  </div>
+                  
+                </div>
+  
+                <!-- Type Exam -->
+                <div class="row">
+                  <div>
+                    <p>B2: Chọn loại đề</p>
+                  </div>
+                  <div class="col">
+                    <input type="radio" id="radio-0" value="1" name="typeExam">
+                    <label for="radio-0">
+                      <span>
+                        <b>Đề thi giữa kỳ, học kỳ </b> <br>
+                        " 50 câu / 60' "
+                      </span>
+                    </label>
+                  </div>
+                  <div class="col">
+                    <input type="radio" id="radio-1" value="2" name="typeExam">
+                    <label for="radio-1">
+                      <span>
+                        <b>Đề thi giữa kỳ, học kỳ </b> <br>
+                        " 50 câu / 60' "
+                      </span>
+                    </label>
+                  </div>
+                  <div class="col">
+                    <input type="radio" id="radio-2" value="3" name="typeExam">
+                    <label for="radio-2">
+                      <span>
+                        <b>Đề thi giữa kỳ, học kỳ </b> <br>
+                        " 50 câu / 60' "
+                      </span>
+                    </label>
+                  </div>
+                </div>
+  
+                <!-- Mode Exam -->
+                <div class="row">
+                  <div>
+                    <p>B3: Chọn nội dung</p>
+                  </div>
+                  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+                  </ul>
+                  <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" i    d="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">Chào cả nhà </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">Chào cả tỉnh</div>
+                  </div>
+                </div> 
+                <div>
+                  <input type="submit" class="btn btn-info " value="Lọc bài">
+                </div>
+              </div>
+            </form>
+           
+            
+          </div>
+        </section>
+      </section
