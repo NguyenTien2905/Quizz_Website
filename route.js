@@ -22,6 +22,7 @@ angular.module('myApp',['ngRoute']).config(function ($routeProvider) {
         templateUrl: 'views/quizz.html',
     }).when('/questions', {
         templateUrl: 'views/questions.html',
+        controller: QuestionController,
     }).when('/filter', {
         templateUrl: 'views/filter.html',
     })
