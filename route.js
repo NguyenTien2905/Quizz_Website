@@ -9,9 +9,11 @@ angular.module('myApp',['ngRoute']).config(function ($routeProvider) {
     }).when('/Q&A', {
         templateUrl: 'views/Q&A.html'
     }).when('/login', {
-        templateUrl: 'views/login.html'
+        templateUrl: 'views/login.html',
+        controller : Logincontroller,
     }).when('/register', {
-        templateUrl: 'views/register.html'
+        templateUrl: 'views/register.html',
+        controller : Logincontroller,
     }).when('/forgot', {
         templateUrl: 'views/forgot.html',
     }).when('/resetPass', {

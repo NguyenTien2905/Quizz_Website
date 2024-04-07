@@ -103,400 +103,72 @@
       <div class="quizz my-3 ">
         <div class="quizz header d-flex justify-content-between ">
           <div class="quiz title">
-            <span>JavaScript</span>
+            <span>Toán</span>
           </div>
           <div class="quiz-moreInfo">
             <a href="#!/category"  class="btn btn-info ">Xem thêm</a>
           </div>
         </div>
-        <div class="section-quizzes my-2 ">
-          <div class="solo-quizzes row">
-            <div class="solo-quizz col border border-1 rounded bg-light mx-2 shadow-sm bg-body rounded">
+        <div class="section-quizzes my-2">
+          <div class="solo-quizzes row d-flex ">
+            <div class="solo-quizz col border border-1 rounded bg-light mx-2 shadow-sm bg-body rounded" ng-repeat="q in quizzes">
               <div class="solo-quizz-image text-center">
                 <img src="/assets/image/istockphoto-1171765499-612x612.jpg" style="width: 100px; height: 100px  ;" alt="">
               </div>
               <div class="solo-quizz-info  d-flex justify-content-between my-3 ">
                 <div class="quanity-question border border-1 rounded ">
-                  <span >10 câu hỏi</span>
+                  <span >{{q.questions}} câu hỏi</span>
                 </div>
                 <div class="view border border-1 rounded">
-                  <span>10 lần chơi</span>
+                  <span>{{q.views}} lần chơi</span>
                 </div>
               </div>
               <div class="solo-quizz-title ">
-                <p>JavaScript Cơ bản</p>
-              </div>
-              <div class="text-center mb-2 ">
-                   <a href="#!/quizz" class="btn btn-danger ">Làm ngay</a>
-              </div>
-            </div>
-            <div class="solo-quizz col border border-1 rounded bg-light mx-2 shadow-sm bg-body rounded">
-              <div class="solo-quizz-image text-center">
-                <img src="/assets/image/istockphoto-1171765499-612x612.jpg" style="width: 100px; height: 100px  ;" alt="">
-              </div>
-              <div class="solo-quizz-info  d-flex justify-content-between my-3 ">
-                <div class="quanity-question border border-1 rounded ">
-                  <span >10 câu hỏi</span>
-                </div>
-                <div class="view border border-1 rounded">
-                  <span>10 lần chơi</span>
-                </div>
-              </div>
-              <div class="solo-quizz-title ">
-                <p>JavaScript Cơ bản</p>
-              </div>
-              <div class="text-center mb-2 ">
-                   <a href="#!/quizz" class="btn btn-danger ">Làm ngay</a>
-              </div>
-            </div>
-            <div class="solo-quizz col border border-1 rounded bg-light mx-2 shadow-sm bg-body rounded">
-              <div class="solo-quizz-image text-center">
-                <img src="/assets/image/istockphoto-1171765499-612x612.jpg" style="width: 100px; height: 100px  ;" alt="">
-              </div>
-              <div class="solo-quizz-info  d-flex justify-content-between my-3 ">
-                <div class="quanity-question border border-1 rounded ">
-                  <span >10 câu hỏi</span>
-                </div>
-                <div class="view border border-1 rounded">
-                  <span>10 lần chơi</span>
-                </div>
-              </div>
-              <div class="solo-quizz-title ">
-                <p>JavaScript Cơ bản</p>
-              </div>
-              <div class="text-center mb-2 ">
-                   <a href="#!/quizz" class="btn btn-danger ">Làm ngay</a>
-              </div>
-            </div>
-            <div class="solo-quizz col border border-1 rounded bg-light mx-2 shadow-sm bg-body rounded">
-              <div class="solo-quizz-image text-center">
-                <img src="/assets/image/istockphoto-1171765499-612x612.jpg" style="width: 100px; height: 100px  ;" alt="">
-              </div>
-              <div class="solo-quizz-info  d-flex justify-content-between my-3 ">
-                <div class="quanity-question border border-1 rounded ">
-                  <span >10 câu hỏi</span>
-                </div>
-                <div class="view border border-1 rounded">
-                  <span>10 lần chơi</span>
-                </div>
-              </div>
-              <div class="solo-quizz-title ">
-                <p>JavaScript Cơ bản</p>
-              </div>
-              <div class="text-center mb-2 ">
-                   <a href="#!/quizz" class="btn btn-danger ">Làm ngay</a>
-              </div>
-            </div>
-            <div class="solo-quizz col border border-1 rounded bg-light mx-2 shadow-sm bg-body rounded">
-              <div class="solo-quizz-image text-center">
-                <img src="/assets/image/istockphoto-1171765499-612x612.jpg" style="width: 100px; height: 100px  ;" alt="">
-              </div>
-              <div class="solo-quizz-info  d-flex justify-content-between my-3 ">
-                <div class="quanity-question border border-1 rounded ">
-                  <span >10 câu hỏi</span>
-                </div>
-                <div class="view border border-1 rounded">
-                  <span>10 lần chơi</span>
-                </div>
-              </div>
-              <div class="solo-quizz-title ">
-                <p>JavaScript Cơ bản</p>
-              </div>
-              <div class="text-center mb-2 ">
-                   <a href="#!/quizz" class="btn btn-danger ">Làm ngay</a>
-              </div>
-            </div>
-            <div class="solo-quizz col border border-1 rounded bg-light mx-2 shadow-sm bg-body rounded">
-              <div class="solo-quizz-image text-center">
-                <img src="/assets/image/istockphoto-1171765499-612x612.jpg" style="width: 100px; height: 100px  ;" alt="">
-              </div>
-              <div class="solo-quizz-info  d-flex justify-content-between my-3 ">
-                <div class="quanity-question border border-1 rounded ">
-                  <span >10 câu hỏi</span>
-                </div>
-                <div class="view border border-1 rounded">
-                  <span>10 lần chơi</span>
-                </div>
-              </div>
-              <div class="solo-quizz-title ">
-                <p>JavaScript Cơ bản</p>
+                <p>{{q.name}}</p>
               </div>
               <div class="text-center mb-2 ">
                    <a href="#!/quizz" class="btn btn-danger ">Làm ngay</a>
               </div>
             </div>
           </div>
-          
         </div>
-
       </div>
 
       <!-- Played the most -->
       <div class="quizz my-3 ">
         <div class="quizz header d-flex justify-content-between  ">
           <div class="quiz title">
-            <span>JavaScript</span>
+            <span>Văn</span>
           </div>
           <div class="quiz-moreInfo">
             <a href=#./category"" class="btn btn-info ">Xem thêm</a>
           </div>
         </div>
         <div class="section-quizzes my-2">
-          <div class="solo-quizzes row">
-            <div class="solo-quizz col border border-1 rounded bg-light mx-2 shadow-sm bg-body rounded">
+          <div class="solo-quizzes row d-flex ">
+            <div class="solo-quizz col border border-1 rounded bg-light mx-2 shadow-sm bg-body rounded" ng-repeat="q in quizzes">
               <div class="solo-quizz-image text-center">
-                <img src="/assets/image/istockphoto-1171765499-612x612.jpg" style="width: 100px; height: 100px  ;" alt="">
+                <img src="/assets/image/slideshow2.jpg" style="width: 100px; height: 100px  ;" alt="">
               </div>
               <div class="solo-quizz-info  d-flex justify-content-between my-3 ">
                 <div class="quanity-question border border-1 rounded ">
-                  <span >10 câu hỏi</span>
+                  <span >{{q.questions}} câu hỏi</span>
                 </div>
                 <div class="view border border-1 rounded">
-                  <span>10 lần chơi</span>
+                  <span>{{q.views}} lần chơi</span>
                 </div>
               </div>
               <div class="solo-quizz-title ">
-                <p>JavaScript Cơ bản</p>
-              </div>
-              <div class="text-center mb-2 ">
-                   <a href="#!/quizz" class="btn btn-danger ">Làm ngay</a>
-              </div>
-            </div>
-            <div class="solo-quizz col border border-1 rounded bg-light mx-2 shadow-sm bg-body rounded">
-              <div class="solo-quizz-image text-center">
-                <img src="/assets/image/istockphoto-1171765499-612x612.jpg" style="width: 100px; height: 100px  ;" alt="">
-              </div>
-              <div class="solo-quizz-info  d-flex justify-content-between my-3 ">
-                <div class="quanity-question border border-1 rounded ">
-                  <span >10 câu hỏi</span>
-                </div>
-                <div class="view border border-1 rounded">
-                  <span>10 lần chơi</span>
-                </div>
-              </div>
-              <div class="solo-quizz-title ">
-                <p>JavaScript Cơ bản</p>
-              </div>
-              <div class="text-center mb-2 ">
-                   <a href="#!/quizz" class="btn btn-danger ">Làm ngay</a>
-              </div>
-            </div>
-            <div class="solo-quizz col border border-1 rounded bg-light mx-2 shadow-sm bg-body rounded">
-              <div class="solo-quizz-image text-center">
-                <img src="/assets/image/istockphoto-1171765499-612x612.jpg" style="width: 100px; height: 100px  ;" alt="">
-              </div>
-              <div class="solo-quizz-info  d-flex justify-content-between my-3 ">
-                <div class="quanity-question border border-1 rounded ">
-                  <span >10 câu hỏi</span>
-                </div>
-                <div class="view border border-1 rounded">
-                  <span>10 lần chơi</span>
-                </div>
-              </div>
-              <div class="solo-quizz-title ">
-                <p>JavaScript Cơ bản</p>
-              </div>
-              <div class="text-center mb-2 ">
-                   <a href="#!/quizz" class="btn btn-danger ">Làm ngay</a>
-              </div>
-            </div>
-            <div class="solo-quizz col border border-1 rounded bg-light mx-2 shadow-sm bg-body rounded">
-              <div class="solo-quizz-image text-center">
-                <img src="/assets/image/istockphoto-1171765499-612x612.jpg" style="width: 100px; height: 100px  ;" alt="">
-              </div>
-              <div class="solo-quizz-info  d-flex justify-content-between my-3 ">
-                <div class="quanity-question border border-1 rounded ">
-                  <span >10 câu hỏi</span>
-                </div>
-                <div class="view border border-1 rounded">
-                  <span>10 lần chơi</span>
-                </div>
-              </div>
-              <div class="solo-quizz-title ">
-                <p>JavaScript Cơ bản</p>
-              </div>
-              <div class="text-center mb-2 ">
-                   <a href="#!/quizz" class="btn btn-danger ">Làm ngay</a>
-              </div>
-            </div>
-            <div class="solo-quizz col border border-1 rounded bg-light mx-2 shadow-sm bg-body rounded">
-              <div class="solo-quizz-image text-center">
-                <img src="/assets/image/istockphoto-1171765499-612x612.jpg" style="width: 100px; height: 100px  ;" alt="">
-              </div>
-              <div class="solo-quizz-info  d-flex justify-content-between my-3 ">
-                <div class="quanity-question border border-1 rounded ">
-                  <span >10 câu hỏi</span>
-                </div>
-                <div class="view border border-1 rounded">
-                  <span>10 lần chơi</span>
-                </div>
-              </div>
-              <div class="solo-quizz-title ">
-                <p>JavaScript Cơ bản</p>
-              </div>
-              <div class="text-center mb-2 ">
-                   <a href="#!/quizz" class="btn btn-danger ">Làm ngay</a>
-              </div>
-            </div>
-            <div class="solo-quizz col border border-1 rounded bg-light mx-2 shadow-sm bg-body rounded">
-              <div class="solo-quizz-image text-center">
-                <img src="/assets/image/istockphoto-1171765499-612x612.jpg" style="width: 100px; height: 100px  ;" alt="">
-              </div>
-              <div class="solo-quizz-info  d-flex justify-content-between my-3 ">
-                <div class="quanity-question border border-1 rounded ">
-                  <span >10 câu hỏi</span>
-                </div>
-                <div class="view border border-1 rounded">
-                  <span>10 lần chơi</span>
-                </div>
-              </div>
-              <div class="solo-quizz-title ">
-                <p>JavaScript Cơ bản</p>
+                <p>{{q.name}}</p>
               </div>
               <div class="text-center mb-2 ">
                    <a href="#!/quizz" class="btn btn-danger ">Làm ngay</a>
               </div>
             </div>
           </div>
-          
         </div>
-
       </div>
-
-      <div class="quizz my-3 ">
-        <div class="quizz header d-flex justify-content-between  ">
-          <div class="quiz title">
-            <span>JavaScript</span>
-          </div>
-          <div class="quiz-moreInfo">
-            <a href=#./category"" class="btn btn-info ">Xem thêm</a>
-          </div>
-        </div>
-        <div class="section-quizzes my-2">
-          <div class="solo-quizzes row">
-            <div class="solo-quizz col border border-1 rounded bg-light mx-2 shadow-sm bg-body rounded">
-              <div class="solo-quizz-image text-center">
-                <img src="/assets/image/istockphoto-1171765499-612x612.jpg" style="width: 100px; height: 100px  ;" alt="">
-              </div>
-              <div class="solo-quizz-info  d-flex justify-content-between my-3 ">
-                <div class="quanity-question border border-1 rounded ">
-                  <span >10 câu hỏi</span>
-                </div>
-                <div class="view border border-1 rounded">
-                  <span>10 lần chơi</span>
-                </div>
-              </div>
-              <div class="solo-quizz-title ">
-                <p>JavaScript Cơ bản</p>
-              </div>
-              <div class="text-center mb-2 ">
-                   <a href="#!/quizz" class="btn btn-danger ">Làm ngay</a>
-              </div>
-            </div>
-            <div class="solo-quizz col border border-1 rounded bg-light mx-2 shadow-sm bg-body rounded">
-              <div class="solo-quizz-image text-center">
-                <img src="/assets/image/istockphoto-1171765499-612x612.jpg" style="width: 100px; height: 100px  ;" alt="">
-              </div>
-              <div class="solo-quizz-info  d-flex justify-content-between my-3 ">
-                <div class="quanity-question border border-1 rounded ">
-                  <span >10 câu hỏi</span>
-                </div>
-                <div class="view border border-1 rounded">
-                  <span>10 lần chơi</span>
-                </div>
-              </div>
-              <div class="solo-quizz-title ">
-                <p>JavaScript Cơ bản</p>
-              </div>
-              <div class="text-center mb-2 ">
-                   <a href="#!/quizz" class="btn btn-danger ">Làm ngay</a>
-              </div>
-            </div>
-            <div class="solo-quizz col border border-1 rounded bg-light mx-2 shadow-sm bg-body rounded">
-              <div class="solo-quizz-image text-center">
-                <img src="/assets/image/istockphoto-1171765499-612x612.jpg" style="width: 100px; height: 100px  ;" alt="">
-              </div>
-              <div class="solo-quizz-info  d-flex justify-content-between my-3 ">
-                <div class="quanity-question border border-1 rounded ">
-                  <span >10 câu hỏi</span>
-                </div>
-                <div class="view border border-1 rounded">
-                  <span>10 lần chơi</span>
-                </div>
-              </div>
-              <div class="solo-quizz-title ">
-                <p>JavaScript Cơ bản</p>
-              </div>
-              <div class="text-center mb-2 ">
-                   <a href="#!/quizz" class="btn btn-danger ">Làm ngay</a>
-              </div>
-            </div>
-            <div class="solo-quizz col border border-1 rounded bg-light mx-2 shadow-sm bg-body rounded">
-              <div class="solo-quizz-image text-center">
-                <img src="/assets/image/istockphoto-1171765499-612x612.jpg" style="width: 100px; height: 100px  ;" alt="">
-              </div>
-              <div class="solo-quizz-info  d-flex justify-content-between my-3 ">
-                <div class="quanity-question border border-1 rounded ">
-                  <span >10 câu hỏi</span>
-                </div>
-                <div class="view border border-1 rounded">
-                  <span>10 lần chơi</span>
-                </div>
-              </div>
-              <div class="solo-quizz-title ">
-                <p>JavaScript Cơ bản</p>
-              </div>
-              <div class="text-center mb-2 ">
-                   <a href="#!/quizz" class="btn btn-danger ">Làm ngay</a>
-              </div>
-            </div>
-            <div class="solo-quizz col border border-1 rounded bg-light mx-2 shadow-sm bg-body rounded">
-              <div class="solo-quizz-image text-center">
-                <img src="/assets/image/istockphoto-1171765499-612x612.jpg" style="width: 100px; height: 100px  ;" alt="">
-              </div>
-              <div class="solo-quizz-info  d-flex justify-content-between my-3 ">
-                <div class="quanity-question border border-1 rounded ">
-                  <span >10 câu hỏi</span>
-                </div>
-                <div class="view border border-1 rounded">
-                  <span>10 lần chơi</span>
-                </div>
-              </div>
-              <div class="solo-quizz-title ">
-                <p>JavaScript Cơ bản</p>
-              </div>
-              <div class="text-center mb-2 ">
-                   <a href="#!/quizz" class="btn btn-danger ">Làm ngay</a>
-              </div>
-            </div>
-            <div class="solo-quizz col border border-1 rounded bg-light mx-2 shadow-sm bg-body rounded">
-              <div class="solo-quizz-image text-center">
-                <img src="/assets/image/istockphoto-1171765499-612x612.jpg" style="width: 100px; height: 100px  ;" alt="">
-              </div>
-              <div class="solo-quizz-info  d-flex justify-content-between my-3 ">
-                <div class="quanity-question border border-1 rounded ">
-                  <span >10 câu hỏi</span>
-                </div>
-                <div class="view border border-1 rounded">
-                  <span>10 lần chơi</span>
-                </div>
-              </div>
-              <div class="solo-quizz-title ">
-                <p>JavaScript Cơ bản</p>
-              </div>
-              <div class="text-center mb-2 ">
-                   <a href="#!/quizz" class="btn btn-danger ">Làm ngay</a>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-
-      </div>
-      
     </div>
-
-  
   </section>
 
   <!-- Documentation -->

@@ -1,5 +1,5 @@
 window.QuestionController = function ($scope,$http, $location) {
-    var quizzUrl = 'http://localhost:3000/questions';
+    var quesUrl = 'http://localhost:3000/questions';
     // Khởi tạo đối tượng quizz
     $scope.quizz = {
         currentQuestion: 0,
@@ -7,7 +7,7 @@ window.QuestionController = function ($scope,$http, $location) {
     };
 
     $scope.quizz.getQuestion = function (){
-        $http.get(quizzUrl)
+        $http.get(quesUrl)
         .then(function(response) {
             $scope.quizz.questions = response.data;
         }, function(error) {

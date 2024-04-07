@@ -1,22 +1,189 @@
 {
-    "questions": [
-      {
-        "id": 1,
-        "question": "Câu hỏi số 1",
-        "options": ["Đáp án A", "Đáp án B", "Đáp án C", "Đáp án D"],
-        "correctOption": 0
-      },
-      {
-        "id": 2,
-        "question": "Câu hỏi số 2",
-        "options": ["Đáp án A", "Đáp án B", "Đáp án C", "Đáp án D"],
-        "correctOption": 1
-      },
-      {
-        "id": 3,
-        "question": "Câu hỏi số 3",
-        "options": ["Đáp án A", "Đáp án B", "Đáp án C", "Đáp án D"],
-        "correctOption": 2
-      }
-    ]
-  }
+  "questions": [
+    {
+      "id": 1,
+      "question": "Thực hiện phép toán sau: 23×11= ?",
+      "options": [
+        "253",
+        "263",
+        "353",
+        "363"
+      ],
+      "correctOption": 0
+    },
+    {
+      "id": 2,
+      "question": "Thực hiện phép toán sau:  100×10= ?",
+      "options": [
+        "100",
+        "200",
+        "1000",
+        "1"
+      ],
+      "correctOption": 3
+    },
+    {
+      "id": 3,
+      "question": "a×b+a×c=",
+      "options": [
+        "a+(b+c)",
+        "b×(a+c)",
+        "c×(b+a)",
+        "a×(b+c)"
+      ],
+      "correctOption": 3
+    },
+    {
+      "id": 4,
+      "question": "Một thế kỉ là bao nhiêu năm?",
+      "options": [
+        "1",
+        "10",
+        "100)",
+        "1000"
+      ],
+      "correctOption": 2
+    },
+    {
+      "id": 5,
+      "question": "Tìm biểu thức bằng nhau: 1235×7",
+      "options": [
+        "1235×(5+3)",
+        "1235×(7−1)",
+        "1235×(4+2)",
+        "1235×(9−2)"
+      ],
+      "correctOption": 3
+    },
+    {
+      "id": 6,
+      "question": "Điền vào chỗ trống sau: Tiên học lễ, hậu học.....",
+      "options": [
+        "Toán",
+        "Anh",
+        "Sử",
+        "Văn"
+      ],
+      "correctOption": 3
+    },
+    {
+      "id": 7,
+      "question": "Điền vào chỗ trống sau: Học thầy không tày học ......",
+      "options": [
+        "Bạn",
+        "Ba",
+        "Mẹ",
+        "Cô"
+      ],
+      "correctOption": 0
+    },
+    {
+      "id": 8,
+      "question": "Điền vào câu sau: Không .... đố mày làm nên",
+      "options": [
+        "Thầy",
+        "Cô",
+        "Cha",
+        "Mẹ"
+      ],
+      "correctOption": 0
+    },
+    {
+      "id": 9,
+      "question": "Điền vào chỗ trống sau: Trọng thầy mới được làm .....",
+      "options": [
+        "Cô",
+        "Thầy",
+        "Cha",
+        "Mẹ"
+      ],
+      "correctOption": 1
+    },
+    {
+      "id": 10,
+      "question": "Tìm biểu thức bằng nhau: 10 × 2000",
+      "options": [
+        "20",
+        "200",
+        "2000",
+        "20000"
+      ],
+      "correctOption": 3
+    }
+  ],
+  "quizzes": [
+    {
+      "id": 1,
+      "name": "Equivalent Fractions",
+      "questions": 10,
+      "views": 20
+    },
+    {
+      "id": 2,
+      "name": "Equivalent Fractions",
+      "questions": 10,
+      "views": 42
+    },
+    {
+      "id": 3,
+      "name": "Equivalent Fractions",
+      "questions": 10,
+      "views": 84
+    },
+    {
+      "id": 4,
+      "name": "Equivalent Fractions",
+      "questions": 10,
+      "views": 17
+    },
+    {
+      "id": 5,
+      "name": "Equivalent Fractions",
+      "questions": 10,
+      "views": 5
+    },
+    {
+      "id": 6,
+      "name": "Equivalent Fractions",
+      "questions": 10,
+      "views": 42
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Toán"
+    },
+    {
+      "id": 2,
+      "name": "Văn"
+    },
+    {
+      "id": 3,
+      "name": "Lịch sử"
+    },
+    {
+      "id": 4,
+      "name": "Tiếng Anh"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "nguyentien",
+      "email": "tiennkph38127@fpt.edu.vn",
+      "password": "nguyentien2905"
+    },
+    {
+      "id": 2,
+      "email": "nguyentien29@gmail.com",
+      "password": "nguyentien2905"
+    },
+    {
+      "id": "7d41",
+      "name": "nguyntien",
+      "email": "tiennkph38127@fpt.edu.vn",
+      "password": "abc1234"
+    }
+  ]
+}

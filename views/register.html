@@ -22,31 +22,37 @@
               <div class="row gy-5 justify-content-center">
                   <div class="col-12 col-lg-5">
                     <!-- Register Form -->
-                    <form action="">
+                    <form name="registerForm">
                       <div class="row gy-3 overflow-hidden">
                         <div class="col-12">
                           <div class="form-floating mb-3">
-                            <input type="name" class="form-control border-0 border-bottom rounded-0" name="name" id="name" placeholder="name" required>
+                            <p ng-if="registerForm.name.$dirty && registerForm.name.$error.required" class="text-danger ">Tên không được bỏ trống</p>
+                            <p ng-if="registerForm.name.$dirty && registerForm.name.$error.minlength" class="text-danger ">Tên không được ít hơn 5 ký tự</p>
+                            <p ng-if="registerForm.name.$dirty && registerForm.name.$error.maxlength" class="text-danger ">Tên không được lớn hơn 15 ký tự</p>
+                            <input type="name" class="form-control border-0 border-bottom rounded-0" name="name" id="name" placeholder="name" ng-model="inputValue.name" minlength="5" maxlength="15" required>
                             <label for="name" class="form-label">Tên đăng nhập</label>
                           </div>
                         </div>
                         <div class="col-12">
                           <div class="form-floating mb-3">
-                            <input type="email" class="form-control border-0 border-bottom rounded-0" name="email" id="email" placeholder="name@example.com" required>
+                            <p ng-if="registerForm.email.$dirty && registerForm.email.$invalid" class="text-danger ">Không đúng định dạng email</p>
+                            <input type="email" class="form-control border-0 border-bottom rounded-0" name="email" id="email" placeholder="name@example.com" ng-model="inputValue.email" required >
                             <label for="email" class="form-label">Email</label>
                           </div>
                         </div>
                         <div class="col-12">
                           <div class="form-floating mb-3">
-                            <input type="password" class="form-control border-0 border-bottom rounded-0" name="password" id="password" value="" placeholder="Password" required>
+                            <p ng-if="registerForm.password.$dirty && registerForm.password.$error.required" class="text-danger ">Mật khẩu không được bỏ trống</p>
+                            <p ng-if="registerForm.password.$dirty && registerForm.password.$error.minlength" class="text-danger ">Mật khẩu không được ít hơn 4 ký tự</p>
+                            <p ng-if="registerForm.password.$dirty && registerForm.password.$error.maxlength" class="text-danger ">Mật khẩu được lớn hơn 16 ký tự</p>
+                            <input type="password" class="form-control border-0 border-bottom rounded-0" name="password" id="password" placeholder="Password" ng-model="inputValue.password" minlength="4" maxlength="16" required>
                             <label for="password" class="form-label">Mật khẩu</label>
                           </div>
                         </div>
     
                         <div class="col-12">
                           <div class="d-grid">
-                            <input type="submit" class="btn btn-lg btn-dark rounded-0 fs-6" value="Đăng ký">
-                          </div>
+                            <button type="button" class="btn btn-lg btn-dark rounded-0 fs-6" ng-click="register()">Đăng ký</button>
                         </div>
                       </div>
                     </form>
